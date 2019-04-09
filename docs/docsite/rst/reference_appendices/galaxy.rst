@@ -135,6 +135,9 @@ Use the following example as a guide for specifying roles in *requirements.yml*:
     - src: git@gitlab.company.com:mygroup/ansible-base.git
       scm: git
       version: "0.1"  # quoted, so YAML doesn't parse this as a floating-point value
+      
+    # from private GitHub using token authentication
+    - src: git+https://username@d15b589c5ae311e98647d663bd873d93@github.example.com/username/role.git
 
 Installing multiple roles from multiple files
 =============================================
